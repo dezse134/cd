@@ -1,2 +1,3 @@
 env:
   APP_VERSION: 148b3ec8c2cb7b8f693172bc8fe839f84fe9fb30
+  DOCKERHUB_USERNAME: gdezse
