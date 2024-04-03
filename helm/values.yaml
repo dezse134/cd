@@ -1,3 +1,4 @@
 env:
+  APP_NAME: argocd-python-app 
   APP_VERSION: 4c53f5552369971a3fa39813e96b7b94b2ed0284
   DOCKERHUB_USERNAME: gdezse

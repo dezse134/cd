@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argo-test-app1
+  name: {{ .Values.env.APP_NAME }}
 spec:
   selector:
     matchLabels:
-      app: argo-test-app1
+      app: {{ .Values.env.APP_NAME }}
   template:
     metadata:
       labels:
-        app: argo-test-app1
+        app: {{ .Values.env.APP_NAME }}
     spec:
       containers:
         - name: argo-test-app1
-          image: "{{ .Values.env.DOCKERHUB_USERNAME }}/argo-test-app:{{ .Values.env.APP_VERSION }}"
+          image: "{{ .Values.env.DOCKERHUB_USERNAME }}/{{ .Values.env.APP_NAME }}:{{ .Values.env.APP_VERSION }}"
           ports:
             - name: http
               containerPort: 5000
