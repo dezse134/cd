@@ -1,4 +1,4 @@
 env:
-  APP_NAME: argo-test-app
-  APP_VERSION: bf8645baa0b4207f60d9c30100115fcfc500b578
+  APP_NAME: argocd-python-app
+  APP_VERSION: dc02737286b92879460a8ac75a0598f4e770708b
   DOCKERHUB_USERNAME: gdezse
