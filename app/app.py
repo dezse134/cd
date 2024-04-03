@@ -11,7 +11,7 @@ def hello_world():
     return "Hello, World!!"
 
 @app.route("/argocd")
-def hello_world():
+def argocd():
     return "This route was deployed by ArgoCD"
  
 if __name__ == '__main__':  
